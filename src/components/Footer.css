@@ -1,0 +1,123 @@
+.footer {
+  background: linear-gradient(180deg, var(--black) 0%, #1a1a1a 100%);
+  color: var(--white);
+  padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  margin-top: var(--spacing-2xl);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--avon-pink), var(--avon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0;
+}
+
+.footer-description {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  transition: all var(--transition-base);
+}
+
+.social-links a:hover {
+  background: linear-gradient(135deg, var(--avon-pink), var(--avon-purple));
+}
+
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--white);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--gray);
+  transition: color var(--transition-base);
+}
+
+.footer-links a:hover {
+  color: var(--avon-pink);
+  padding-left: var(--spacing-xs);
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--gray);
+}
+
+.contact-info svg {
+  color: var(--avon-pink);
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  color: var(--gray);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-attribution a {
+  font-weight: 600;
+}
+
+.heart {
+  color: var(--avon-pink);
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
